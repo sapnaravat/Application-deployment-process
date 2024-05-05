@@ -1,0 +1,40 @@
+refernce docs:  https://anywhere.epam.com/en/blog/how-to-dockerize-spring-boot-application
+
+Number 1:
+1. create an application push the code into repo.
+1. mvn clean compile
+
+Check the application
+Before we dockerize a Spring Boot app, we’ll need to check if our Spring Boot application is also running. Let’s run the next command in the internal terminal in IntelliJ (run it from your cmd or Git Bash in Windows):
+
+mvn clean spring-boot:run
+
+curl -v localhost:8080/api/hello
+
+You should see the following message in your cmd to validate that the app is already running and returning the proper message in this route:
+
+
+Add configuration to dockerize the Spring Boot application
+The next step of dockerizing a Spring Boot app is adding the configuration to the Dockerfile for Spring Boot app.
+
+To clarify, Docker is a platform that combines your application, its dependencies, and even an OS into an image that can run on any platform.
+
+Now we will create a Dockerfile to add all the configurations to dockerize our Spring Boot application.
+
+Create a Dockerfile and add the next configurations (Docker will read as a pipeline to apply them):
+
+
+update 
+docker install
+run image if locally hoga toh run nhi toh dockerhub se lekr aega.
+image ko chlana hi container bolte hein
+
+# how dockerize application on AWS?
+https://docs.aws.amazon.com/codecatalyst/latest/userguide/deploy-tut-eks.html
+
+deploy an application on AWS
+Kubernetes Fundamentals For Absolute Beginners: Architecture & Components
+
+https://medium.com/@bubu.tripathy/containerize-and-deploy-a-spring-boot-application-in-a-kubernetes-cluster-6dfe0a1a4b15
+
+Containerize and Deploy a Spring Boot Application in a Kubernetes Cluster
